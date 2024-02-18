@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Input } from "@nextui-org/react";
 
 const Hero = () => {
   return (
