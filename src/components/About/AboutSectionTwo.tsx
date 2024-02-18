@@ -15,13 +15,13 @@ const AboutSectionTwo = () => {
                 src="/images/hero/creative.avif"
                 alt="about image"
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                className="rounded-3xl drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
                 src="/images/hero/creative.avif"
                 alt="about image"
                 fill
-                className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
+                className="rounded-3xl drop-shadow-three hidden dark:block dark:drop-shadow-none"
               />
             </div>
           </div>

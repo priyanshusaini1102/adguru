@@ -20,7 +20,7 @@ const Features = () => {
             ))}
           </div>
           <div className="border border-grey rounded-md p-3 w-fit text-center mx-auto">
-            Want to discuss?<Link href={"/contact"} className="underline text-center leading-3">Let&apos;s schedule a call</Link>
+            Want to discuss? <Link href={"/contact"} className="underline text-center leading-3">Let&apos;s schedule a call</Link>
           </div>
         </div>
       </section>
