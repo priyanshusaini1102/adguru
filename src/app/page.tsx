@@ -80,7 +80,7 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
+      {/* <Video /> */}
       <Brands />
       {servicesData.map((serviceData, index) =>
         index % 2 === 0 ? (

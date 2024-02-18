@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Input } from "@nextui-org/react";
 
 const Hero = () => {
   return (
@@ -23,6 +24,15 @@ const Hero = () => {
                   <br />A dedicated team of specialists, delivering remarkable
                   work to our clients worldwide!
                 </p>
+                <div className="mb-12 flex gap-4 items-center justify-center">
+                  <input
+                    type="email"
+                    color="primary"
+                    placeholder="Enter your mobile"
+                    className="max-w-[220px] border shadow-md p-3 text-grey-800 dark:text-white dark:bg-gray-dark dark:border-gray-dark"
+                  />
+                  <p>Call Back</p>
+                </div>
                 <div className="mb-12 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
@@ -39,8 +49,15 @@ const Hero = () => {
                   </Link>
                 </div>
                 <div className="flex flex-col items-center">
-                  <p className="text-slate-400 font-medium text-md mb-4">Our Performance Marketing Services are Certified by</p>
-                  <Image width={350} height={100} src="/images/logo/meta-partner-logo.png" alt="" />
+                  <p className="text-md mb-4 font-medium text-slate-400">
+                    Our Performance Marketing Services are Certified by
+                  </p>
+                  <Image
+                    width={350}
+                    height={100}
+                    src="/images/logo/meta-partner-logo.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
