@@ -62,11 +62,11 @@ const Header = () => {
                   className="w-full dark:hidden max-w-[90px] sm:max-w-[80px]"
                 />
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/adguru-logo.png"
                   alt="logo"
                   width={140}
                   height={30}
-                  className="hidden w-full dark:block"
+                  className="hidden w-full dark:block  max-w-[90px] sm:max-w-[80px]"
                 />
               </Link>
             </div>
