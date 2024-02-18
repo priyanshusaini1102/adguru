@@ -62,7 +62,7 @@ const Header = () => {
                   className="w-full dark:hidden max-w-[90px] sm:max-w-[80px]"
                 />
                 <Image
-                  src="/images/logo/adguru-logo.png"
+                  src="/images/logo/adguru-logo-dark.png"
                   alt="logo"
                   width={140}
                   height={30}
