@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Manu Verma",
+    designation: "Owner @AJ_Jewellers",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "I've been using this digital marketing platform for a month now, and the results are impressive. The user-friendly interface and insightful analytics have made a significant impact on our online presence.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
+    name: "Amar Bhardwaj",
     designation: "Founder @UIdeck",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    "As a small business owner, I appreciate the tailored marketing strategies provided by this platform. It's like having a dedicated marketing team at my fingertips, helping me reach my target audience effectively.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
+    name: "Nikhil Mehta",
     designation: "Founder @Lineicons",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    "The support team is exceptional! Quick responses and proactive solutions make me feel confident in using this service. It's not just a tool; it's a partner in our digital success.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -34,11 +34,11 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Discover what our clients are saying about their experience with us. Your success is our priority, and we're proud to share their stories."
           center
         />
 

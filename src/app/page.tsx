@@ -90,8 +90,8 @@ export default function Home() {
         ),
       )}
       <Testimonials />
-      <Pricing />
-      <Blog />
+      {/* <Pricing /> */}
+      {/* <Blog /> */}
       <Contact />
     </>
   );
