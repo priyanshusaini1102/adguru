@@ -37,6 +37,8 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+  console.log(usePathName);
+  
 
   return (
     <>

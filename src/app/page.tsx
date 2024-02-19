@@ -81,7 +81,9 @@ export default function Home() {
       <Hero />
       <Features />
       {/* <Video /> */}
+      <div id="clients" />
       <Brands />
+      <div id="why-adguru" />
       {servicesData.map((serviceData, index) =>
         index % 2 === 0 ? (
           <AboutSectionOne key={index} sectionData={serviceData} />
