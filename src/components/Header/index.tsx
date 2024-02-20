@@ -161,7 +161,7 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
                   href="https://wa.me/919690009778?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-md bg-primary px-4 py-3 text-base font-medium text-white hover:text-white hover:bg-blur transition duration-300 hover:bg-opacity-90 md:block"
                 >
                   Chat Now
                 </Link>
