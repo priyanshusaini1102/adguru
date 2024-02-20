@@ -40,7 +40,7 @@ const Hero = () => {
                     🔥 Book a strategy call
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="https://wa.me/919690009778?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
                     className="inline-block rounded-lg bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     {/* //! TODO: ADD WHATSAPP ICON */}
