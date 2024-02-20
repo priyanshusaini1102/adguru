@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Hero = () => {
   const [toShowForm, setToShowForm] = useState(true)
+  // const []
   return (
     <>
       <section
@@ -50,7 +51,7 @@ const Hero = () => {
                   </Link>
                   <Link
                     href="https://wa.me/919690009778?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
-                    className="inline-block rounded-lg bg-green-500 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
+                    className="inline-block rounded-lg bg-[#25D366] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                   >
                     {/* //! TODO: ADD WHATSAPP ICON */}
                     Whatsapp Now
