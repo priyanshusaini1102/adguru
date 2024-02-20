@@ -12,7 +12,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AdGuru | Aapke business ki Jarurat!",
+  title: "AdGuru | Aapke Business Ki Jarurat!",
   description: "Digital Marketing Agency",
 };
 

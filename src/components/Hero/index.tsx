@@ -24,20 +24,24 @@ const Hero = () => {
                   work to our clients worldwide!
                 </p>
                 <div className="mb-12 flex gap-4 items-center justify-center">
-                  <input
-                    type="email"
-                    color="primary"
-                    placeholder="Enter your mobile"
-                    className="max-w-[220px] border shadow-md p-3 text-grey-800 dark:text-white dark:bg-gray-dark dark:border-gray-dark"
-                  />
-                  <p>Call Back</p>
+                  <form className="w-full max-w-sm">
+                    <div className="flex items-center border-b border-primary py-2">
+                      <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="First Name" aria-label="Your Mobile Number" />
+                      |
+                      <p>+91</p>
+                      <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Ph. Number" aria-label="Your Mobile Number" />
+                      <button className="flex-shrink-0 bg-primary hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded" type="button">
+                      Call Back 🤙🏻
+                      </button>
+                    </div>
+                  </form>
                 </div>
                 <div className="mb-12 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/contact"
+                    href="tel:+919690009778"
                     className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Book a strategy call
+                    🔥 Call Now
                   </Link>
                   <Link
                     href="https://wa.me/919690009778?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
