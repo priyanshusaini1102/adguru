@@ -2,17 +2,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import axios from 'axios';
 
 const Hero = () => {
   const [toShowForm, setToShowForm] = useState(true)
   const [name, setName] = useState("")
   const [number, setNumber] = useState("")
 
-  const handleCallBackSubmit = (e) => {
-    e.preventDefault()
-    
-    setToShowForm(false)
-  }
+  const handleCallBackSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('/api/callback', { name, number });
+      console.log(response.data);
+      // Handle success or any further actions
+    } catch (error) {
+      console.error('Error submitting callback form:', error);
+      // Handle errors appropriately
+    }
+
+    // Clear form
+    setName('');
+    setNumber('');
+  };
 
   return (
     <>
