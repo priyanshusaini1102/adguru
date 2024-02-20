@@ -17,12 +17,6 @@ const Features = () => {
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
-          <div className="border-grey mx-auto w-fit rounded-md border p-3 text-center">
-            Want to discuss?{" "}
-            <Link href={"/contact"} className="text-center leading-3 underline">
-              Let&apos;s schedule a call
-            </Link>
-          </div>
         </div>
       </section>
     </>

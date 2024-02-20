@@ -8,7 +8,9 @@ const Hero = () => {
   const [name, setName] = useState("")
   const [number, setNumber] = useState("")
 
-  const handleCallBackSubmit = () => {
+  const handleCallBackSubmit = (e) => {
+    e.preventDefault()
+    
     setToShowForm(false)
   }
 
@@ -34,18 +36,18 @@ const Hero = () => {
                   work to our clients worldwide!
                 </p>
                 <div className="mb-12 flex gap-4 items-center justify-center">
-                  {toShowForm ? <form className="w-full max-w-sm" onSubmit={(e) => {e.preventDefault(); setToShowForm(false)}}>
+                  {toShowForm ? <form className="w-full max-w-sm" onSubmit={handleCallBackSubmit}>
                     <div className="flex items-center border-b border-primary py-2">
                       <input onChange={(e) => setName(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 dark:text-white leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Your Mobile Number" />
                       |
                       <p>+91</p>
                       <input onChange={(e) => setNumber(e.target.value)} className="appearance-none bg-transparent border-none w-full dark:text-white text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Ph. Number" aria-label="Your Mobile Number" />
-                      <button onClick={handleCallBackSubmit} className="flex-shrink-0 bg-primary font-semibold hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded" type="button">
+                      <button disabled={!name || !number} type="submit" className={`flex-shrink-0 bg-primary font-semibold hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded ${!name || !number ? "opacity-50 cursor-not-allowed" : ""}`}>
                       Call Back
                       </button>
                     </div>
                   </form> :
-                  <p>Our Team will reach out to you within 24 hours.</p>
+                  <p>Our team will reach out to you within 24 hours.</p>
                   }
                 </div>
                 <div className="mb-12 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
