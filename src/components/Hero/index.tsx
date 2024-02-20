@@ -29,11 +29,11 @@ const Hero = () => {
                 <div className="mb-12 flex gap-4 items-center justify-center">
                   {toShowForm ? <form className="w-full max-w-sm" onSubmit={(e) => {e.preventDefault(); setToShowForm(false)}}>
                     <div className="flex items-center border-b border-primary py-2">
-                      <input className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="First Name" aria-label="Your Mobile Number" />
+                      <input className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 dark:text-white leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Your Mobile Number" />
                       |
                       <p>+91</p>
-                      <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Ph. Number" aria-label="Your Mobile Number" />
-                      <button className="flex-shrink-0 bg-primary hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded" type="button">
+                      <input className="appearance-none bg-transparent border-none w-full dark:text-white text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Ph. Number" aria-label="Your Mobile Number" />
+                      <button className="flex-shrink-0 bg-primary font-semibold hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded" type="button">
                       Call Back
                       </button>
                     </div>
@@ -50,7 +50,7 @@ const Hero = () => {
                   </Link>
                   <Link
                     href="https://wa.me/919690009778?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
-                    className="inline-block rounded-lg bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="inline-block rounded-lg bg-green-500 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                   >
                     {/* //! TODO: ADD WHATSAPP ICON */}
                     Whatsapp Now
