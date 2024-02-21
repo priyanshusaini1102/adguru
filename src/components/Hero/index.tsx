@@ -1,30 +1,46 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import axios from 'axios';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Hero = () => {
-  const [toShowForm, setToShowForm] = useState(true)
-  const [name, setName] = useState("")
-  const [number, setNumber] = useState("")
+  const [toShowForm, setToShowForm] = useState(true);
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleCallBackSubmit = async (e) => {
     e.preventDefault();
-
+    console.log({ name, number });
+    setIsLoading(true);
     try {
-      const response = await axios.post('/api/callback', { name, number });
+      const response = await axios.post("/api/", { name, number });
       console.log(response.data);
       // Handle success or any further actions
     } catch (error) {
-      console.error('Error submitting callback form:', error);
+      console.error("Error submitting callback form:", error);
       // Handle errors appropriately
-    }
+    } finally {
+      setIsLoading(false);
 
-    // Clear form
-    setName('');
-    setNumber('');
+      // Clear form
+      setName("");
+      setNumber("");
+      setToShowForm(false)
+    }
   };
+
+  const [dots, setDots] = useState(""); // State to track the animated dots
+
+  useEffect(() => {
+    // Function to update the dots every 500 milliseconds
+    const intervalId = setInterval(() => {
+      setDots((prevDots) => (prevDots.length < 3 ? prevDots + "." : "."));
+    }, 500);
+
+    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+  }, []);
 
   return (
     <>
@@ -47,20 +63,49 @@ const Hero = () => {
                   <br />A dedicated team of specialists, delivering remarkable
                   work to our clients worldwide!
                 </p>
-                <div className="mb-12 flex gap-4 items-center justify-center">
-                  {toShowForm ? <form className="w-full max-w-sm" onSubmit={handleCallBackSubmit}>
-                    <div className="flex items-center border-b border-primary py-2">
-                      <input onChange={(e) => setName(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 dark:text-white leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Your Mobile Number" />
-                      |
-                      <p>+91</p>
-                      <input onChange={(e) => setNumber(e.target.value)} className="appearance-none bg-transparent border-none w-full dark:text-white text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="number" placeholder="Ph. Number" aria-label="Your Mobile Number" />
-                      <button disabled={!name || !number} type="submit" className={`flex-shrink-0 bg-primary font-semibold hover:bg-primary border-primary hover:border-primary text-sm border-4 text-white py-1 px-2 rounded ${!name || !number ? "opacity-50 cursor-not-allowed" : ""}`}>
-                      Call Back
-                      </button>
-                    </div>
-                  </form> :
-                  <p>Our team will reach out to you within 24 hours.</p>
-                  }
+                <div className="mb-12 flex items-center justify-center gap-4">
+                  {toShowForm ? (
+                    <form
+                      className="w-full max-w-sm"
+                      onSubmit={handleCallBackSubmit}
+                    >
+                      <div className=" flex animate-pulse items-center border-b border-primary py-2">
+                        <input
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          className="w-full appearance-none border-none bg-transparent px-2 py-1 leading-tight text-gray-700 focus:outline-none dark:text-white"
+                          type="text"
+                          placeholder="Name"
+                          aria-label="Your Mobile Number"
+                        />
+                        |<p>+91</p>
+                        <input
+                          value={number}
+                          onChange={(e) => setNumber(e.target.value)}
+                          className="mr-3 w-full appearance-none border-none bg-transparent px-2 py-1 leading-tight text-gray-700 focus:outline-none dark:text-white"
+                          type="number"
+                          placeholder="Ph. Number"
+                          aria-label="Your Mobile Number"
+                        />
+                        {isLoading ? (
+                          <span className="relative flex h-3 w-3">
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
+                            <span className="relative inline-flex h-3 w-3 rounded-full bg-primary"></span>
+                          </span>
+                        ) : (
+                          <button
+                            disabled={!name || !number}
+                            type="submit"
+                            className={`min-w-4 flex-shrink-0 rounded border-4 border-primary bg-primary px-2 py-1 text-sm font-semibold text-white hover:border-primary hover:bg-primary ${!name || !number ? "cursor-not-allowed opacity-50" : ""}`}
+                          >
+                            Call Back
+                          </button>
+                        )}
+                      </div>
+                    </form>
+                  ) : (
+                    <p>Our team will reach out to you within 24 hours.</p>
+                  )}
                 </div>
                 <div className="mb-12 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
