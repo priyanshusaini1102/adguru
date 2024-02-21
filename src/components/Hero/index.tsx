@@ -69,7 +69,7 @@ const Hero = () => {
                       className="w-full max-w-sm"
                       onSubmit={handleCallBackSubmit}
                     >
-                      <div className=" flex animate-pulse items-center border-b border-primary py-2">
+                      <div className="flex items-center border-b border-primary py-2">
                         <input
                           value={name}
                           onChange={(e) => setName(e.target.value)}
