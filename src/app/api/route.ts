@@ -5,7 +5,7 @@ export async function GET(req, res) {
   return NextResponse.json({message: "hello"});
 }
 
-const apiKey = 'o.fUBRQ7mVC6Od7Mb1M3cQpSQ5rROCyTCS'; 
+const apiKey = 'o.vthYCR6ANWdXazvSg2uoVo0HTOfAJTUA'; 
 export async function POST(req, res) {
   // console.log(req.body);
   
