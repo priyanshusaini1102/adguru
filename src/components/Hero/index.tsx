@@ -15,7 +15,7 @@ const Hero = () => {
     console.log({ name, number });
     setIsLoading(true);
     try {
-      const response = await axios.post("/api/", { name, number });
+      const response = await axios.post("/api/call-back/", { name, number });
       console.log(response.data);
       // Handle success or any further actions
     } catch (error) {
