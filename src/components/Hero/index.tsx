@@ -27,7 +27,7 @@ const Hero = () => {
       // Clear form
       setName("");
       setNumber("");
-      setToShowForm(false)
+      setToShowForm(false);
     }
   };
 
@@ -76,6 +76,8 @@ const Hero = () => {
                           className="w-full appearance-none border-none bg-transparent px-2 py-1 leading-tight text-gray-700 focus:outline-none dark:text-white"
                           type="text"
                           placeholder="Name"
+                          pattern="[A-Za-z\s]+"
+                          title="Please enter only letters and spaces"
                           aria-label="Your Mobile Number"
                         />
                         |<p>+91</p>
@@ -84,11 +86,14 @@ const Hero = () => {
                           onChange={(e) => setNumber(e.target.value)}
                           className="mr-3 w-full appearance-none border-none bg-transparent px-2 py-1 leading-tight text-gray-700 focus:outline-none dark:text-white"
                           type="number"
+                          max={9999999999}
+                          min={1000000000}
+                          title="Please enter a valid number"
                           placeholder="Ph. Number"
                           aria-label="Your Mobile Number"
                         />
                         {isLoading ? (
-                          <span className="relative flex h-3 w-3">
+                          <span className="relative mr-3 flex h-3 w-3">
                             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
                             <span className="relative inline-flex h-3 w-3 rounded-full bg-primary"></span>
                           </span>
