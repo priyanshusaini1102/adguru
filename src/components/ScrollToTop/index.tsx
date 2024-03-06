@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
@@ -31,13 +32,13 @@ export default function ScrollToTop() {
   return (
     <div className="fixed bottom-8 right-8 z-[99]">
       {isVisible && (
-        <div
-          onClick={scrollToTop}
+        <Link
+          href="https://wa.me/918006458809?text=Hi%20AdGuru%20Team,%20I'm%20interested%20in%20your%20services."
           aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          className="flex h-12 w-12 cursor-pointer bg-transparent items-center justify-center rounded-md text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
         >
           <Image src="/images/logo/whatsapp.png" alt="scroll to top" fill />
-        </div>
+        </Link>
       )}
     </div>
   );
