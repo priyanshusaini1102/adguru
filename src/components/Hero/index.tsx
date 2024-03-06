@@ -59,8 +59,8 @@ const Hero = () => {
                   Badal de apni duniya, digital tajurbe ke saath!
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  A dedicated team of specialists, delivering remarkable work to
-                  our clients worldwide!
+                  3+ years | 50+ Brands <br />A dedicated team of specialists,
+                  delivering remarkable work to our clients worldwide!
                 </p>
                 <div className="mb-12 flex items-center justify-center gap-4">
                   {toShowForm ? (
