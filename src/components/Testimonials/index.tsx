@@ -14,7 +14,7 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Amar Bhardwaj",
+    name: "Aayush Saini",
     designation: "Founder @UIdeck",
     content:
     "As a small business owner, I appreciate the tailored marketing strategies provided by this platform. It's like having a dedicated marketing team at my fingertips, helping me reach my target audience effectively.",
