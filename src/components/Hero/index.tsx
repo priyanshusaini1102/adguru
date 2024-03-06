@@ -56,12 +56,11 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Optimize Your Ads For More Profit.
+                  Badal de apni duniya, digital tajurbe ke saath!
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  3+ years | 50+ Brands | 35+ Crore Ad spent
-                  <br />A dedicated team of specialists, delivering remarkable
-                  work to our clients worldwide!
+                  A dedicated team of specialists, delivering remarkable work to
+                  our clients worldwide!
                 </p>
                 <div className="mb-12 flex items-center justify-center gap-4">
                   {toShowForm ? (
