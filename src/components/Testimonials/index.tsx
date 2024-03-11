@@ -6,28 +6,28 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Manu Verma",
-    designation: "Owner @AJ_Jewellers",
+    designation: "Owner @AJ Jewellers",
     content:
-      "I've been using this digital marketing platform for a month now, and the results are impressive. The user-friendly interface and insightful analytics have made a significant impact on our online presence.",
+      "Adguru ne meri brand ke liye khud ko ek game-changer prove kiya hai. Unki deep understanding aur research ke saath, woh effective marketing strategies implement karte hain. Mera business unki expertise se bahut fayda utha raha hai!",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
     name: "Aayush Saini",
-    designation: "Founder @UIdeck",
+    designation: "Founder @Home Online",
     content:
     "As a small business owner, I appreciate the tailored marketing strategies provided by this platform. It's like having a dedicated marketing team at my fingertips, helping me reach my target audience effectively.",
-    image: "/images/testimonials/auth-02.png",
+    image: "/images/testimonials/aayush.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Nikhil Mehta",
-    designation: "Founder @Lineicons",
+    name: "Vansh Malik",
+    designation: "Founder @Tapri Talks",
     content:
-    "The support team is exceptional! Quick responses and proactive solutions make me feel confident in using this service. It's not just a tool; it's a partner in our digital success.",
-    image: "/images/testimonials/auth-03.png",
+    "The support team is exceptional! Quick responses and proactive solutions make me feel confident in using this service. It's not just a tool; it's a partner in our digital success.ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
+    image: "/images/testimonials/vansh.png",
     star: 5,
   },
 ];

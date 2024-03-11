@@ -55,8 +55,9 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Badal de apni duniya, digital tajurbe ke saath!
+                <h1 className="mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight">
+                  Rocket 🚀 Bana De <br /> 
+                  Aapka Vyapar!
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   3+ years | 50+ Brands <br />A dedicated team of specialists,
@@ -123,7 +124,7 @@ const Hero = () => {
                     className="inline-block rounded-lg bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                   >
                     {/* //! TODO: ADD WHATSAPP ICON */}
-                    Whatsapp Now
+                    Whatsapp Now !
                   </Link>
                 </div>
                 <div className="flex flex-col items-center">
@@ -133,6 +134,7 @@ const Hero = () => {
                   <Image
                     width={350}
                     height={100}
+                    className="rounded-md"
                     src="/images/logo/meta-partner-logo.png"
                     alt=""
                   />

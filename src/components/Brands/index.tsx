@@ -8,10 +8,16 @@ const Brands = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
-            <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
+            <div className=" rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
+              <div className="flex flex-wrap items-center justify-between gap-8 md:justify-between mx-auto">
               {brandsData.map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
               ))}
+              </div>
+              {/* TODO - have to complete this */}
+              <div className=" text-center text-sm md:text-lg mt-8 text-gray-500 font-semibold">
+                We are waiting for your company to be here... <br />
+              </div>
             </div>
           </div>
         </div>
@@ -23,18 +29,19 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, imageLight, name } = brand;
+  const { href, image, imageLight, name, id } = brand;
 
   return (
-    <div className="flex w-1/2 items-center justify-center px-3 py-[15px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
+    <div className="">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 transition hover:opacity-100 dark:opacity-60 dark:hover:opacity-100"
+        className="w-full transition"
       >
-        <Image src={imageLight} alt={name} fill className="hidden dark:block" />
-        <Image src={image} alt={name} fill className="block dark:hidden" />
+        <div className={`h-20 w-20 relative rounded-full overflow-hidden cover p-4 `}>
+          <Image src={imageLight} alt={name} fill />
+        </div>
       </a>
     </div>
   );
