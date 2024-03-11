@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Aayush Saini",
     designation: "Founder @Home Online",
     content:
-    "As a small business owner, I appreciate the tailored marketing strategies provided by this platform. It's like having a dedicated marketing team at my fingertips, helping me reach my target audience effectively.",
+    "Mujhe AD Guru company par poora bharosa hai. Unka transparent communication, timely reports, aur effective SEO strategies ne mere business ko top search results mein la diya. Highly recommended!",
     image: "/images/testimonials/aayush.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Vansh Malik",
     designation: "Founder @Tapri Talks",
     content:
-    "The support team is exceptional! Quick responses and proactive solutions make me feel confident in using this service. It's not just a tool; it's a partner in our digital success.ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
+    "Mere business ko online world mein standout banane mein Ad Guru company ka kamaal hai. Unki consistent efforts, user-friendly content, aur effective SEO ne mere brand ki credibility ko boost kiya hai.",
     image: "/images/testimonials/vansh.png",
     star: 5,
   },
