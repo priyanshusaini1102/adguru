@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Manu Verma",
     designation: "Owner @AJ Jewellers",
     content:
-      "Adguru ne meri brand ke liye khud ko ek game-changer prove kiya hai. Unki deep understanding aur research ke saath, woh effective marketing strategies implement karte hain. Mera business unki expertise se bahut fayda utha raha hai!",
+      "Adguru ne meri brand ke liye khud ko ek game-changer prove kiya hai. Unki deep understanding aur research ke saath, woh effective marketing strategies implement karte hain. Mera business unki expertise se bahut fayda hua hai!",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Aayush Saini",
     designation: "Founder @Home Online",
     content:
-    "Mujhe AD Guru company par poora bharosa hai. Unka transparent communication, timely reports, aur effective SEO strategies ne mere business ko top search results mein la diya. Highly recommended!",
+    "Mujhe AdGuru company par poora bharosa hai. Unka transparent communication, timely reports, aur effective SEO strategies ne mere business ko top search results mein la diya. Highly recommended!",
     image: "/images/testimonials/aayush.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Vansh Malik",
     designation: "Founder @Tapri Talks",
     content:
-    "Mere business ko online world mein standout banane mein Ad Guru company ka kamaal hai. Unki consistent efforts, user-friendly content, aur effective SEO ne mere brand ki credibility ko boost kiya hai.",
+    "Mere business ko online world mein standout banane mein AdGuru company ka kamaal hai. Unki consistent efforts, user-friendly content, aur effective SEO ne mere brand ki credibility ko boost kiya hai.",
     image: "/images/testimonials/vansh.png",
     star: 5,
   },

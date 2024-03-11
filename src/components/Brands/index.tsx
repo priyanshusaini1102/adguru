@@ -14,8 +14,7 @@ const Brands = () => {
                 <SingleBrand key={brand.id} brand={brand} />
               ))}
               </div>
-              {/* TODO - have to complete this */}
-              <div className=" text-center text-sm md:text-lg mt-8 text-gray-500 font-semibold">
+              <div className=" text-center text-xs md:text-lg mt-8 text-gray-500 font-semibold">
                 We are waiting for your company to be here... <br />
               </div>
             </div>
