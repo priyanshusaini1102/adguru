@@ -12,7 +12,7 @@ const Footer = () => {
             <span>
               Adguru™
             </span>
-            . All Rights Reserved. | Badal de apni duniya, digital tajurbe ke saath!
+            . All Rights Reserved.
           </span>
         </div>
       </footer>
