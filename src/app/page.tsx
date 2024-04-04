@@ -79,6 +79,7 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
+      <Pricing />
       {/* <Video /> */}
       <div id="clients" />
       <Brands />
@@ -91,7 +92,6 @@ export default function Home() {
         ),
       )}
       <Testimonials />
-      <Pricing />
       {/* <Blog /> */}
       {/* <Contact /> */}
     </>

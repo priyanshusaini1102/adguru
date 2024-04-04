@@ -19,7 +19,7 @@ const pricingData: {
   price: number;
 }[] = [
   {
-    name: "Basic Plan",
+    name: "Basic",
     description:
       "Great for startups/small businesses. Includes managing one social media platform (choose from Instagram, Facebook, or Google), basic Google Ads, and monthly performance reports.",
     features: [
@@ -31,7 +31,7 @@ const pricingData: {
     price: 15000,
   },
   {
-    name: "Standard Plan",
+    name: "Standard",
     description:
       "Perfect for growing businesses. Provides management for two social media platforms (choose from Instagram, Facebook, or Google), basic SEO, email marketing, monthly strategy calls, and a standard website landing page.",
     features: [
@@ -46,7 +46,7 @@ const pricingData: {
     price: 30000,
   },
   {
-    name: "Premium Plan",
+    name: "Premium",
     description:
       "Tailored for businesses aiming for online dominance. Includes management for all three social media platforms (Instagram, Facebook, and Google), comprehensive SEO, advanced Google Ads, website analysis, bi-weekly strategy calls, custom website design and development, and dedicated landing page creation.",
     features: [
