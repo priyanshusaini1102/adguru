@@ -4,15 +4,76 @@ import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
+const formattedPrice: (price: number) => string = (price: number) =>
+price.toLocaleString("en-IN", {
+  style: "currency",
+  currency: "INR",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+
+const pricingData: {
+  name: string;
+  description: string;
+  features: string[];
+  price: number;
+}[] = [
+  {
+    name: "Basic Plan",
+    description:
+      "Great for startups/small businesses. Includes managing one social media platform (choose from Instagram, Facebook, or Google), basic Google Ads, and monthly performance reports.",
+    features: [
+      "Social Media Management",
+      "Basic Google Ads Campaign",
+      "Local SEO",
+      "Monthly Performance Report",
+    ],
+    price: 15000,
+  },
+  {
+    name: "Standard Plan",
+    description:
+      "Perfect for growing businesses. Provides management for two social media platforms (choose from Instagram, Facebook, or Google), basic SEO, email marketing, monthly strategy calls, and a standard website landing page.",
+    features: [
+      "Social Media Management",
+      "Targeted Facebook/Instagram/Google Ads Campaign",
+      "Local SEO",
+      "Email Marketing",
+      "Standard Website Landing Page",
+      "Monthly Strategy Call",
+      "Monthly Performance Report",
+    ],
+    price: 30000,
+  },
+  {
+    name: "Premium Plan",
+    description:
+      "Tailored for businesses aiming for online dominance. Includes management for all three social media platforms (Instagram, Facebook, and Google), comprehensive SEO, advanced Google Ads, website analysis, bi-weekly strategy calls, custom website design and development, and dedicated landing page creation.",
+    features: [
+      "Social Media Management",
+      "Comprehensive SEO",
+      "Advanced Facebook/Instagram/Google Ads Campaign",
+      "Website Analysis and Recommendations",
+      "Bi-weekly Strategy Calls",
+      "Custom Website Design and Development",
+      "Dedicated Landing Page Creation",
+      "Monthly Performance Report",
+    ],
+    price: 50000,
+  },
+];
+
+
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+  const [isMonthly, setIsMonthly] = useState(false);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Opt for our yearly plans and enjoy an exclusive 5% discount today!
+          Limited time offer. Don't miss out on these savings!"
           center
           width="665px"
         />
@@ -58,45 +119,26 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
+          {pricingData.map((currPricingData, index) => (
+            <PricingBox
+              key={index}
+              packageName={currPricingData.name}
+              price={isMonthly
+                ? formattedPrice(currPricingData.price)
+                : formattedPrice(Math.round(currPricingData.price * 12 - currPricingData.price * 12 * 0.05))}
+              
+              duration={isMonthly ? "mo" : "yr"}
+              subtitle={currPricingData.description}
+            >
+              {currPricingData.features.map((feature, index) => (
+                <OfferList
+                  key={feature.slice(0, 10) + index}
+                  text={feature}
+                  status="active"
+                />
+              ))}
+            </PricingBox>
+          ))}
         </div>
       </div>
 
