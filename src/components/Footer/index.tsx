@@ -5,10 +5,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="m-4 lg:px-40 px-5 w-full rounded-lg bg-white shadow dark:bg-gray-800 flex justify-between xs:justify-center items-center flex-wrap content-center">
+      <footer className="m-4 lg:px-40 px-5 rounded-lg bg-white shadow dark:bg-gray-800 flex justify-center md:justify-between items-center flex-wrap content-center">
         <div className="flex items-center justify-center gap-4 p-4">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
-          Follow: 
+          Follow us: 
           </span>
         <div className="flex items-center gap-1">
           <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
