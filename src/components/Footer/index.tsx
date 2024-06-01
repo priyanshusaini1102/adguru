@@ -16,15 +16,15 @@ const Footer = () => {
             <Image width={20} height={20} src="/images/logo/instagram.png" alt="" />
             </a>
           </button>
-          <button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-          <div className="flex justify-center items-center">
+            <button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <a href="https://www.linkedin.com/company/adguruofficial" className="flex justify-center items-center">
             <Image width={20} height={20} src="/images/logo/linkedin.png" alt="" />
-            </div>
-          </button>
+            </a>
+            </button>
           <button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-          <div className="flex justify-center items-center">
+          <a href="https://api.whatsapp.com/send/?phone=918006458809&text=Hi+AdGuru+Team%2C+I%27m+interested+in+your+services.&type=phone_number&app_absent=0" className="flex justify-center items-center">
             <Image width={20} height={20} src="/images/logo/whatsapp.png" alt="" />
-            </div>
+            </a>
           </button>
         </div>
         </div>
