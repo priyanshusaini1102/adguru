@@ -7,7 +7,6 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
-import TechStack from "@/components/TechStack";
 import TechnologiesSection from "@/components/TechStack/TechnologiesSection";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
