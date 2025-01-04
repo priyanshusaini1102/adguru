@@ -80,6 +80,7 @@ const Hero = () => {
                           title="Please enter only letters and spaces"
                           aria-label="Your Mobile Number"
                         />
+                        {/* Temp commit to deploy on vercel */}
                         |<p>&nbsp;&nbsp;+91</p>
                         <input
                           value={number}
