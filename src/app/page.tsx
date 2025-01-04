@@ -7,6 +7,8 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import TechStack from "@/components/TechStack";
+import TechnologiesSection from "@/components/TechStack/TechnologiesSection";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
@@ -79,10 +81,13 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
+      <div id="pricing" />
       <Pricing />
+      <div id="technologies" />
+      <TechnologiesSection />
       {/* <Video /> */}
       <div id="clients" />
-      <Brands />
+      {/* <Brands /> */}
       <div id="why-adguru" />
       {servicesData.map((serviceData, index) =>
         index % 2 === 0 ? (
@@ -91,7 +96,7 @@ export default function Home() {
           <AboutSectionTwo key={index} sectionData={serviceData} />
         ),
       )}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Blog /> */}
       {/* <Contact /> */}
     </>

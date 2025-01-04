@@ -60,7 +60,7 @@ const Hero = () => {
                   Aapka Vyapar!
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  3+ years | 50+ Brands <br />A dedicated team of specialists,
+                  A dedicated team of specialists,
                   delivering remarkable work to our clients worldwide!
                 </p>
                 <div className="mb-12 flex items-center justify-center gap-4">
@@ -80,7 +80,7 @@ const Hero = () => {
                           title="Please enter only letters and spaces"
                           aria-label="Your Mobile Number"
                         />
-                        |<p>+91</p>
+                        |<p>&nbsp;&nbsp;+91</p>
                         <input
                           value={number}
                           onChange={(e) => setNumber(e.target.value)}
@@ -127,7 +127,7 @@ const Hero = () => {
                     Whatsapp Now !
                   </Link>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <p className="text-md mb-4 font-medium text-slate-400">
                     Our Performance Marketing Services are Certified by
                   </p>
@@ -138,7 +138,7 @@ const Hero = () => {
                     src="/images/logo/meta-partner-logo.png"
                     alt=""
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
